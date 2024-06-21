@@ -1,0 +1,55 @@
+
+method: grid 
+metric:
+    goal: minimize
+    name: eval/error
+
+parameters: 
+    optimization_steps:
+        value: 1000
+    learning_rate: 
+        value: 0.01  
+    optimizer: 
+        value: sgd 
+    optimizer_momentum:
+        value: 0.9
+    grad_clip_value:
+        value: 10.0
+    activation:
+        value: relu 
+    dim_layers: 
+        value: [3,3,3,3]
+    seed:
+        values:  
+        - 1933  
+        - 7411
+        - 11
+        - 0
+
+    prediction_horizon:
+        value: 150
+    state_weight:
+        value: [1.0, 1.0]
+    initial_weight: 
+        value:  [10.0, 10.0]
+    input_weight: 
+        value:  [1.0]
+    final_weight: 
+        value: [10.0, 10.0]   
+
+    num_initial_conditions: 
+        value: 10
+
+    eval_interval:
+        value: 10
+    eval_horizon:
+        value: 200
+
+    early_stop_threshold:
+        value: 0.001
+    early_stop_patience:
+        value: 20
+    early_stop_delay:
+        value: 50
+    early_stop_epsilon:
+        value: 0.0001 

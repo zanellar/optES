@@ -1,0 +1,25 @@
+{   
+    "dt": 0.1,
+    "integral_samples": 30,
+    "root_finder": "fsolve",
+    "root_finder_tol": 1e-3,
+    "target_pos": 1.0, 
+    "initial_pos" : {"type":"uniform", "min": -6, "max": 6},
+     
+    "model": {
+        "r": 1,
+        "m": 1,
+        "b": 1,
+        "k": 0.5,
+        "horizon": 100
+    },
+
+    "controller": {
+        "Kw": 1,
+        "Kx": 1,
+        "R": 1,
+        "dim_layers": [3,3,3,3],
+        "weights_file_name": "naespbc_20240126_3_3_3_3_relu_tough-sweep-1",
+        "activation": "relu" 
+    } 
+} 

@@ -1,0 +1,26 @@
+ {   
+
+    "dt": 0.1,
+    "integral_samples": 30,
+    "root_finder": "fsolve",
+    "root_finder_tol": 1e-3,
+    "target_pos": 0.8, 
+    "initial_pos" : 0.2,
+
+    "model": {
+        "r": 1,
+        "m": 1,
+        "b": 1,
+        "k": 0.5,
+        "horizon": 200
+    },
+
+    "controller": {
+        "Kw": 1,
+        "Kx": 1,
+        "R": 1,
+        "dim_layers": [20],
+        "weights_file_name": "naespbc_peach-sweep-2_20231203_2e-01",
+        "activation": "relu6" 
+    } 
+} 

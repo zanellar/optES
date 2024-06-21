@@ -1,0 +1,51 @@
+
+method: grid
+
+metric:
+    goal: minimize
+    name: cost
+
+parameters: 
+    optimization_steps:
+        value: 200 
+    learning_rate: 
+        value: 0.05
+    optimizer: 
+        value: sgd
+    optimizer_momentum:
+        value: 0.5
+    seed:
+        values: 
+            - 0
+            - 1
+            - 2 
+    grad_clip_value:
+        value: 1.0
+
+    prediction_horizon:
+        value: 100 
+    state_weight:
+        value: [0., 0.]
+    input_weight:
+        value: 0.001 
+    initial_weight:
+        value: [0., 0.]
+    final_weight:
+        value: [0.5, 0.5]
+
+    num_initial_conditions: 
+        value: 1
+        
+    early_stop_threshold:
+        value: 0.00001
+    early_stop_patience:
+        value: 10
+    early_stop_delay:
+        value: 10
+    early_stop_epsilon:
+        value: 0.0
+        
+    eval_interval:
+        value: 1
+    eval_horizon:
+        value: 100

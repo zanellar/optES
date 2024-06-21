@@ -1,0 +1,47 @@
+
+method: grid 
+metric:
+    goal: minimize
+    name: eval/steps
+
+parameters: 
+    optimization_steps:
+        value: 5000
+    learning_rate: 
+        value:  0.05 
+    optimizer: 
+        value: adam 
+    optimizer_momentum:
+        value: 0.9
+    grad_clip_value:
+        value: 20.0 
+    seed:
+        value: 1933 
+
+    prediction_horizon:
+        value: 150
+    state_weight:
+        value: [0.0, 0.0]
+    initial_weight: 
+        value:  [0.0, 0.0]
+    input_weight: 
+        value:  [1]
+    final_weight: 
+        value: [10.0, 10.0]  
+
+    num_initial_conditions: 
+        value: 10
+
+    eval_interval:
+        value: 10
+    eval_horizon:
+        value: 500
+
+    early_stop_threshold:
+        value: 0.001
+    early_stop_patience:
+        value: 20
+    early_stop_delay:
+        value: 5
+    early_stop_epsilon:
+        value: 0.0001 
