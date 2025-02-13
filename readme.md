@@ -40,3 +40,19 @@ To run the test on the optimal solution:
 python test_aespbc_pendulum_net.py
 ```
 here change the name of the parameters file ('args_params_file'). And inside the new file specify the path to the optimal weight. See for example "data/params/pendulum_neural_aespbc_fixedinit.json"
+
+# References #
+Zanella, R., Macchelli, A. and Stramigioli, S., 2024. Learning the Optimal Energy-based Control Strategy for Port-Hamiltonian Systems. IFAC-papersonline, 58(6), pp.208-213.
+## Cite ##
+```
+@article{zanella2024learning,
+  title={Learning the Optimal Energy-based Control Strategy for Port-Hamiltonian Systems},
+  author={Zanella, Riccardo and Macchelli, Alessandro and Stramigioli, Stefano},
+  journal={IFAC-papersonline},
+  volume={58},
+  number={6},
+  pages={208--213},
+  year={2024},
+  publisher={Elsevier}
+}
+```
